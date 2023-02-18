@@ -1,6 +1,6 @@
 git status: to check the status 
 git --version: to check version
-git init: to initialize a repository as a git repository.
+git init: to initialize a repository/folder as a git repository.
 
 "git add ." :used to stage file
 git commit -m "ur message":to commit staged files
@@ -36,4 +36,44 @@ git reset filename: unstage the file
 git checkout filename: remove the changes 
 git checkout . : remove changes done in all files that are not staged
 
+git add -A: stages all
+git add . : stages new and modified,without deleted
+git add -u: stages modified and deleted,without new 
 
+Clone :
+copy ssh from the file we want to clone the files
+>open the folder where you want to clone the file
+>open git bash
+>$ git clone ssh : will clone only folders
+git clone ssh . : to clone the complete repository in github too.(sayad...search on google and update here)
+
+ls: shows lists of all files
+ls -la: 
+
+touch filename: will create blank file with name as "filename"
+notepad .filename: will open the file in notepad
+git rm --cached filename: will remove history of the ignored file
+
+whatever filename we add under gitignore will not included and would not be tracked
+eg:*.sql:will ignore all files with .sql extension
+
+create a folder and add it in github:
+>create the folder in local desktop
+> $ git init: it will create a hidden .fit file where all the data is stored.
+> create the required files or folders
+> $ git add . : would stage the files
+>$ git commit -m "message": go to commit stage
+> $git status: to check if all files are staged & commit or not.
+> create new repository in github
+>copy repository ssh 
+>$ git remote add origin copied_ssh
+>$ git push -u origin main
+ 
+git branch: to get branch name
+git branch branch_name:would create a new branch with name "branch name".
+git checkout branch_name: switch to new/another branch with name "branch_name"
+
+git merege new:would merge "new" branch files  with current branch where dit bash is opened.
+
+git branch -d login: would delete login branch from local desktop
+git push origin --delete login: would delete login branch from github
