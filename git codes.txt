@@ -13,7 +13,10 @@ git config --global user.name "Yaswant sahu"
 
 Three Layer architecture of Git:
  >How git works:
-    >working directory (L1)->(stage files)->staging area(L2) ->(commit) -> git directory(repository)(L3)->(checkout the project)->working directory
+    >working directory (L1)->(stage files)
+	->staging area(L2) ->(commit) 
+	-> git directory(repository)(L3)->(checkout the project)
+	->working directory
 
 git remote add origin git@github.com:yaswant-sahu/git-learn.git
 git push -u origin main
@@ -24,6 +27,13 @@ Generate New SSh key:
 $ ssh-keygen -t ed25519 -C "yawantkumarfeb6@gmail.com"
 >$ eval "$(ssh-agent -s)"
 >$ clip < ~/.ssh/id_ed25519.pub: To copy key 
+>Go to deploy setting>deploy keys >add key>paste the copied ssh
 
+git diff filename : shows the changes we made in the given filename
+git diff --staged file : to check change in file in staged layer
+
+git reset filename: unstage the file
+git checkout filename: remove the changes 
+git checkout . : remove changes done in all files that are not staged
 
 
