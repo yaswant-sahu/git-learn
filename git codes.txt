@@ -1,0 +1,8 @@
+git status: to check the status 
+git --version: to check version
+git init: to initialize a repository as a git repository.
+
+How git works:
+working directory ->(stage files)->staging area ->(commit) -> git directory(repository)->(checkout the project)->working directory
+
+"git add ." :used to stage file
