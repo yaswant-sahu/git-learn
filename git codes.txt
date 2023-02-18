@@ -2,12 +2,15 @@ git status: to check the status
 git --version: to check version
 git init: to initialize a repository as a git repository.
 
-How git works:
-working directory ->(stage files)->staging area ->(commit) -> git directory(repository)->(checkout the project)->working directory
-
 "git add ." :used to stage file
 git commit -m "ur message":to commit staged files
 git log: to check changes done by certain user
 
+
+To set username & email
 git config --global user.email "yaswantkumarfeb6@gmail.com"
 git config --global user.name "Yaswant sahu"
+
+Three Layer architecture of Git:
+ >How git works:
+    >working directory (L1)->(stage files)->staging area(L2) ->(commit) -> git directory(repository)(L3)->(checkout the project)->working directory
