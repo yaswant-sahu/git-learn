@@ -14,3 +14,6 @@ git config --global user.name "Yaswant sahu"
 Three Layer architecture of Git:
  >How git works:
     >working directory (L1)->(stage files)->staging area(L2) ->(commit) -> git directory(repository)(L3)->(checkout the project)->working directory
+
+git remote add origin git@github.com:yaswant-sahu/git-learn.git
+git push -u origin main
